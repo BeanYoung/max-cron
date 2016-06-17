@@ -10,7 +10,7 @@ setup(
     description='',
     py_modules=['maxcron'],
     install_requires=[
-        'click==6.6',
+        'click==6.2',
         'PyYAML==3.11',
         'requests==2.10.0'
     ],
