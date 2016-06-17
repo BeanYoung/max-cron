@@ -16,7 +16,7 @@ __version__ = '0.0.1'
 
 @click.command()
 @click.argument('cmd', required=True, nargs=-1)
-def main(cmd):
+def cli(cmd):
     config_file_path = '/etc/maxload.yml'
     uuid = ''
     if os.path.exists(config_file_path):
@@ -54,4 +54,4 @@ def main(cmd):
 
 
 if __name__ == '__main__':
-    main()
+    cli()
